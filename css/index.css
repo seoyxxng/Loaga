@@ -1,0 +1,34 @@
+:root {
+  --text-color: #ddd;
+  --title-size: 20px;
+  --text-size: 18px;
+}
+
+
+/* 메인레이아웃 */
+.wrap{width: 100%; overflow: hidden;}
+body{background: #141414;}
+
+/* 헤더영역 */
+#headerArea{width: 90%; position: fixed; left: 0; top: 0; z-index: 100;
+  border-bottom: #353535; padding: 0 5%;}
+#headerArea .header_inner{margin: 0 auto; display: flex; align-items: center;
+  justify-content: space-between;}
+#headerArea .logo a{font-family: 'Saira Stencil One', sans-serif;
+  overflow: hidden; margin-right: 50px; color: #818181; transition: all .3s;}
+#headerArea .logo .logo_big{font-size: 3rem;}
+#headerArea .logo .logo_color{color: #28EAFF;}
+#headerArea .logo:hover a{color: #28EAFF;}
+#headerArea a{color: var(--text-color);}
+
+#headerArea #gnb{width: 70%;}
+#headerArea #gnb ul{display: flex; width: 50%;}
+#headerArea #gnb ul li{width: 20%; text-align: center;}
+#headerArea #gnb a{padding: 30px 0;}
+#headerArea .top_menu{display: flex; margin-left: auto; align-items: center; gap: 10px;}
+#headerArea .top_menu li{text-align: center;}
+
+.top_menu .login_btn{background: #ffffff1a; padding: 15px 20px; border-radius: 30px;}
+.top_menu .dl_mode a{border-radius: 50%; background: #ffffff1a; width: 48px; height: 48px;}
+.top_menu .dl_mode i{font-size: 2rem; margin-top: 8px;}
+
