@@ -38,7 +38,7 @@ body{background: #141414; color: #fff;}
 /* main */
 .swiper{width: 100%; margin: 50px 0;}
 .main_box{display: flex; gap: 15px; width: 70%; margin: 0 auto;}
-.main_right{margin-top: 80px;}
+.main_right{margin-top: 80px; position: relative;}
 .main_right img{border-radius: 15px; width: 100%;}
 .main_img img{border-radius: 15px; 
   object-fit: cover;
@@ -51,7 +51,7 @@ body{background: #141414; color: #fff;}
 .main_box dl dd{font-size: 1.2rem;}
 
 .swiper-button-next, 
-.swiper-button-prev {
+.swiper-button-prev{
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -65,8 +65,8 @@ body{background: #141414; color: #fff;}
   transition: all .3s;
   position: absolute;
 }
-.swiper-button-next{right: 290px;}
-.swiper-button-prev{left: 1500px;}
+.swiper-button-next{right: 15%;}
+.swiper-button-prev{left: 75%;}
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -87,6 +87,7 @@ body{background: #141414; color: #fff;}
   background: linear-gradient(to top, rgba(0,0,0,.8), transparent);
   padding: 50px 0 30px 0; border-radius: 0 0 15px 15px; font-size: 1.1rem; text-align: right;}
 .main_btn a{padding-right: 30px; color: var(--text-color);}
+
 
 /* 반응형 수정중 */
 @media screen and (max-width: 768px) {
