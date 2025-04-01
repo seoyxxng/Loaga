@@ -7,11 +7,11 @@
 
 /* 메인레이아웃 */
 .wrap{width: 100%; overflow: hidden;}
-body{background: #141414;}
+body{background: #141414; color: #fff;}
 
 /* 헤더영역 */
-#headerArea{width: 90%; position: fixed; left: 0; top: 0; z-index: 100;
-  border-bottom: #353535; padding: 0 5%;}
+#headerArea{width: 90%; z-index: 100;
+  border-bottom: 1px solid #353535; padding: 0 5%;}
 #headerArea .header_inner{margin: 0 auto; display: flex; align-items: center;
   justify-content: space-between;}
 #headerArea .logo a{font-family: 'Saira Stencil One', sans-serif;
@@ -19,7 +19,8 @@ body{background: #141414;}
 #headerArea .logo .logo_big{font-size: 3rem;}
 #headerArea .logo .logo_color{color: #28EAFF;}
 #headerArea .logo:hover a{color: #28EAFF;}
-#headerArea a{color: var(--text-color);}
+#headerArea li a{color: var(--text-color); transition: all .3s;}
+#headerArea li a:hover{color: #fff;}
 
 #headerArea #gnb{width: 70%;}
 #headerArea #gnb ul{display: flex; width: 50%;}
@@ -29,6 +30,77 @@ body{background: #141414;}
 #headerArea .top_menu li{text-align: center;}
 
 .top_menu .login_btn{background: #ffffff1a; padding: 15px 20px; border-radius: 30px;}
-.top_menu .dl_mode a{border-radius: 50%; background: #ffffff1a; width: 48px; height: 48px;}
-.top_menu .dl_mode i{font-size: 2rem; margin-top: 8px;}
+.top_menu .dl_mode a{border-radius: 50%; background: #ffffff1a;
+  width: 48px; height: 48px;}
+.top_menu .dl_mode i{font-size: 2rem; margin-top: 8px; transition: all .3s;}
+.top_menu .dl_mode a:hover i{transform: scale(.9);}
 
+/* main */
+.swiper{width: 100%; margin: 50px 0;}
+.main_box{display: flex; gap: 15px; width: 70%; margin: 0 auto;}
+.main_right{margin-top: 80px;}
+.main_box img{
+  border-radius: 15px; 
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.main_box dl{text-align: center; margin-top: 20px;}
+.main_box dl dt{font-size: 1.6rem; color: #FFE54F;}
+.main_box dl dd{font-size: 1.2rem;}
+
+.swiper-button-next, 
+.swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, .1);
+  color: rgba(255, 255, 255, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 150px;
+  transition: all .3s;
+  position: absolute;
+}
+.swiper-button-next{right: 290px;}
+.swiper-button-prev{left: 1500px;}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 24px;
+  font-weight: 300;
+}
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{content: '←';}
+.swiper-button-next:after{content: '→';}
+
+.main_img:hover img{transform: scale(1.05);}
+.main_img img{transition: all .3s;}
+.main_img{position: relative; overflow: hidden; border-radius: 15px;}
+.main_btn{width: 100%; position: absolute; bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.8), transparent);
+  padding: 50px 0 30px 0; border-radius: 0 0 15px 15px; font-size: 1.1rem; text-align: right;}
+.main_btn a{padding-right: 30px; color: var(--text-color);}
+
+/* 반응형 수정중 */
+@media screen and (max-width: 768px) {
+    #headerArea #gnb ul{
+    width: 100%;
+  }
+  
+  #headerArea .header_inner{
+    flex-direction: column;
+  }
+  .main_box{
+    flex-direction: column;
+    width: 90%;
+  }
+  .main_right{
+    margin-top: 20px;
+  }
+}
