@@ -120,13 +120,136 @@ body{background: #141414; color: #fff;}
 
 /* main_small */
 
-.main_small{display: flex; justify-content: center; gap: 15px; width: 70%; margin: 0 auto;}
+.main_small{display: flex; justify-content: center; gap: 15px; width: 55%; margin: 0 auto;}
 .main_small img{border-radius: 10px;}
 .small_con{position: relative;}
-.small_btn{width: 100%; position: absolute; bottom: 0;
+.small_btn{width: 94%; position: absolute; bottom: 0;
   background: linear-gradient(to top, rgba(0,0,0,.8), transparent);
   padding: 15px 10px; border-radius: 0 0 15px 15px; font-size: 1.1rem; text-align: left;}
-.small_btn a{padding-right: 30px; color: var(--text-color);}
+.small_btn a{color: var(--text-color);}
+
+
+/* notice + update */
+.section1 {
+  width: 55%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+.notice,
+.loa_notice{
+  width: 36%;
+}
+.notice{
+  background: #70707028;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.notice h3{
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+.notice ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notice li{
+  border-bottom: 1px solid #555;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.notice li:last-child{
+  border-bottom: none;
+}
+.notice li p:first-child{
+  color: #ddd;
+  font-weight: 500;
+}
+.notice-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  margin-bottom: 10px;
+}
+.notice-header h3{
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 10px;
+}
+.notice-more{
+  color: #ddd;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+}
+.notice-more:hover{
+  color: #fff;
+  transform: translateX(2px);
+}
+
+
+
+
+
+
+
+
+.update{width: 24%; position: relative;}
+.update h3{margin: 10px 0;}
+.update .swiper2{width: 100%; overflow: hidden;}
+.update-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.update-nav .swiper-button-prev2,
+.update-nav .swiper-button-next2 {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.update-nav .swiper-button-prev2:hover,
+.update-nav .swiper-button-next2:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+.update-nav {
+  display: flex;
+  gap: 5px;
+}
+
+.swiper-button-prev2::after {
+  content: '←'; font-size: 24px;
+}
+
+.swiper-button-next2::after {
+  content: '→'; font-size: 24px;
+}
+
+
 
 
 

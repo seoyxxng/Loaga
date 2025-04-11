@@ -12,3 +12,13 @@ var swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// update Swiper
+var swiper2 = new Swiper(".swiper2", {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+});
