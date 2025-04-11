@@ -118,6 +118,17 @@ body{background: #141414; color: #fff;}
   padding: 50px 0 30px 0; border-radius: 0 0 15px 15px; font-size: 1.1rem; text-align: right;}
 .main_btn a{padding-right: 30px; color: var(--text-color);}
 
+/* main_small */
+
+.main_small{display: flex; justify-content: center; gap: 15px; width: 70%; margin: 0 auto;}
+.main_small img{border-radius: 10px;}
+.small_con{position: relative;}
+.small_btn{width: 100%; position: absolute; bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.8), transparent);
+  padding: 15px 10px; border-radius: 0 0 15px 15px; font-size: 1.1rem; text-align: left;}
+.small_btn a{padding-right: 30px; color: var(--text-color);}
+
+
 
 /* 반응형 수정중 */
 @media screen and (max-width: 768px) {
